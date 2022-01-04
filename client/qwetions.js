@@ -13,10 +13,7 @@ function Q1(){
     document.write("</br>")
     document.write("<button type='submit' onclick='showQ1()'>בדיקה</button>")
     document.write("</form>")
-
 }
-
-
 
 function Q2(){
     document.write("<form style='text-align: center;'>")
@@ -33,7 +30,6 @@ function Q2(){
     document.write("<button type='submit' onclick='showQ2()'>בדיקה</button>")
     document.write("</form>")
 }
-
 
 
 function Q3(){
@@ -62,15 +58,15 @@ if(Qnom == 1){
     Q3()
 }
 function showQ3(){
+    window.location.href = "goTo.html";
     alert('85%התשובה הנכונה היא: ')
-    document.write("<a href='goTo.html'>לחץ כאן</a>")
 }
 function showQ1(){
+    window.location.href = "goTo.html";
     alert('מרחב דירתי מוגן (ממד)התשובה הנכונה היא: ')
-    document.write("<a href='goTo.html'>לחץ כאן</a>")
 }
 function showQ2(){
-    alert('תו תכן מכון התכנים הישראליהתשובה הנכונה היא: ')
-    document.write("<a href='goTo.html'>לחץ כאן</a>")
+    window.location.href = "goTo.html";
+    alert('תו תכן מכון התכנים הישראלי התשובה הנכונה היא: ')
 }
 
