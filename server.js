@@ -12,6 +12,11 @@ app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/index.html'));
+  });
+
 app.use('/static', express.static(path.join(__dirname, 'client')))
 //app.use('/lit/user', customersRouter);
 
