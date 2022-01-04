@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const answerSchema
-
 const questionSchema = new Schema({
     id: {
         type: Number,
@@ -27,3 +25,7 @@ const questionSchema = new Schema({
     }
 
 })
+
+const Question = mongoose.model('question',questionSchema);
+
+module.exports = Question;

@@ -1,0 +1,48 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* width: 600px; */
+    /* align-items: center; */
+}
+
+
+#login {
+    
+}
+
+#wrapper {
+    background-color: aliceblue;
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#wrapper #content {
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+}
+
+#cameraIconFrame {
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 40px;
+    /* margin-bottom: 0; */
+    margin-top:200px;
+    /* position: absolute; */
+}
+
+#reader {
+    display: none;
+    margin-top: -150px;
+}
+
+#userIcon{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+

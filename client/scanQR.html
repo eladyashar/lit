@@ -1,1 +1,44 @@
-<h1>scanQR</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Scan QR</title>
+</head>
+
+<body>
+    <div id="scanQR">
+        <div id="wrapper">
+            <div id="content">
+                <i id="userIcon" class="fa fa-user" style="font-size:36px"></i>
+                <h1>שלום אלעד</h1>
+                <h3>בשביל לפתוח את עמדת הטעינה</h3>
+                <h3>QR - סרוק את ה</h3>
+                <button id="cameraIconFrame"><i class="fa fa-camera" style="font-size:36px"></i></button>
+            </div>
+
+            <div style="width: 500px" id="reader"></div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="html5-qrcode.min.js"></script>
+    <script src="./scanQR.js"></script>
+    <script>
+        function onScanSuccess(decodedText, decodedResult) {
+            // Handle on success condition with the decoded text or result.
+            console.log(`Scan result: ${decodedText}`, decodedResult);
+            window.location.href = "./index.html";
+
+        }
+
+        var html5QrcodeScanner = new Html5QrcodeScanner(
+            "reader", { fps: 10, qrbox: 250 });
+        html5QrcodeScanner.render(onScanSuccess);
+    </script>
+</body>
+
+</html>
