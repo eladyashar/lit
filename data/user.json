@@ -1,0 +1,21 @@
+[
+    {
+        "id":1,
+        "name":"Alon Peled",
+        "userName":"Alono",
+        "score":0
+    },
+    {
+        "id":2,
+        "name":"Yuval Shemer",
+        "userName":"Yuvali",
+        "score":0
+    },
+    {
+        "id":3,
+        "name":"Shlomi Ben Shabat",
+        "userName":"Shlomo",
+        "score":0
+    }
+ 
+]
