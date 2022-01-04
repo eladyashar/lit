@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/static', express.static(path.join(__dirname, '../client')))
+app.use('/static', express.static(path.join(__dirname, 'client')))
 //app.use('/lit/user', customersRouter);
 
 // app.use('/lit/suppliers', suppliersRouter); 
